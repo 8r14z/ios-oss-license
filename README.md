@@ -28,7 +28,7 @@ if libName in podspecMap and 'homepage' in podspecMap[libName]:
     url = podspecMap[libName]['homepage']
 ```
 ### How does this work? 
-->> read the code tho. I know it's super ugly but some how it works (at least in my case) 
+->> read the code tho, the master function is `def getLicenses(projectRootPath):`. I know it's super ugly but some how it works (at least in my case) 
 
 ## It doesn't work for you? 
 Haha I'm sure it's not working for everybody. **So what's next?**
