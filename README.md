@@ -6,10 +6,10 @@ So at some point, you may encounter a situation that u need to attribute all ope
 <img width="200" alt="notme" src="https://user-images.githubusercontent.com/27178862/113502779-fe40f100-9560-11eb-9c22-1ef5018707ec.PNG">
 
 ## How-to
-#### Prerequisite
+### Prerequisite
 Make sure `Python 3` is installed on your machine. if not, [here](https://www.python.org/downloads/)
 
-#### Run the script
+### Run the script
 ```
 $ python3 getlicense.py -p path/to/your/ios/project
 ```
@@ -27,6 +27,8 @@ The table can include even more data. Basically, all kind of info in podspec. Fe
 if libName in podspecMap and 'homepage' in podspecMap[libName]:
     url = podspecMap[libName]['homepage']
 ```
+### How does this work? 
+->> read the code tho
 
 ## It doesn't work for you? 
 Haha I'm sure it's not working for everybody. **So what's next?**
