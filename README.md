@@ -13,7 +13,7 @@ $ python3 getlicense.py -p path/to/your/ios/project
 `-p`: the path to your project root, where the `Podfile` file is located. 
 
 ## It doesn't work for you? 
-Haha I'm sure it's not working for everybody. **So what's next?** \
+Haha I'm sure it's not working for everybody. **So what's next?**
 
 **DIY** There is hint in the code, i believe so (\*serious voice\*)
 
