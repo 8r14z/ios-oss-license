@@ -92,13 +92,13 @@ def getLicenses(projectRootPath):
         podspecPaths += [os.path.join(dirPath, file) for file in files if file.endswith('.json')]
     podspecMap = loadPodspecs(podspecPaths)
 
-    # get license copyrights
+    # get copyright attributions
     podsDir = f'{projectRootPath}/Pods/Target\ Support\ Files/Pods-*'
     copyrightPaths = [line for line in subprocess.check_output(f"find {podsDir} -name 'Pods*acknowledgements.markdown'", shell=True).splitlines()]
     assert(len(copyrightPaths) == 1)
     copyrightMap = loadCopyrightMap(copyrightPaths[0])
 
-    # get license types in MD file
+    # get license types
     licensePaths = [line for line in subprocess.check_output(f"find {podsDir} -name 'Pods*acknowledgements.plist'", shell=True).splitlines()]
     assert(len(licensePaths) == 1)
     licenseMap = loadLicenseMap(licensePaths[0])
@@ -121,6 +121,8 @@ def getLicenses(projectRootPath):
                 url = podspecMap[libName]['homepage']
 
             writer.writerow([libName, copyright, license, url])
+    
+    call('open license.csv')
 
 if __name__ == '__main__':
     args = resolveArgs()
