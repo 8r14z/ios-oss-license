@@ -1,10 +1,8 @@
 import os
-import logging
 import subprocess
 import csv
 import plistlib
 import json
-from pathlib import Path
 
 from argparse import ArgumentParser
 
