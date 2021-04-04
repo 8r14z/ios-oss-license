@@ -13,7 +13,7 @@ Make sure `Python 3` is installed on your machine. if not, [here](https://www.py
 ```
 $ python3 getlicense.py -p path/to/your/ios/project
 ```
-`-p`: the path to your project root, where the `Podfile` file is located. 
+- `-p`: the path to your project root, where the `Podfile` file is located. 
 
 The result is a CSV file named `license.csv`, which is similar to this format
 
@@ -21,7 +21,7 @@ The result is a CSV file named `license.csv`, which is similar to this format
 | ------------- |:-------------:|:-----:|:-----:|
 |AFNetworking|The content of [this](https://github.com/AFNetworking/AFNetworking/blob/master/LICENSE)|MIT |https://github.com/AFNetworking/AFNetworking/
 
-The table can include even more data. Basically, all kind of info in podspec. Feel free to custom the below line.
+The table can include countless data. Basically, all kind of info in podspec. Feel free to custom the below line.
 
 ```python
 if libName in podspecMap and 'homepage' in podspecMap[libName]:
