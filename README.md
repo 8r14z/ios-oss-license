@@ -19,7 +19,7 @@ The result is a CSV file named `license.csv`, which is similar to this format
 
 | Name|Copyright|License|URL
 | ------------- |:-------------:|:-----:|:-----:|
-|AFNetworking|The content of [this](https://github.com/AFNetworking/AFNetworking/blob/master/LICENSE) |MIT |https://github.com/AFNetworking/AFNetworking/
+|AFNetworking|The content of [this](https://github.com/AFNetworking/AFNetworking/blob/master/LICENSE)|MIT |https://github.com/AFNetworking/AFNetworking/
 
 
 
