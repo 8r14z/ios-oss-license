@@ -77,11 +77,12 @@ def getLicenses(projectRootPath):
         call(f'rm -rf {podCachePath}')
 
     # Remove Pods folder
-    os.chdir(projectRootPath)
-    if os.path.isdir('Pods'):
-        call('rm -rf Pods')
+    projectPodsDirPath = f'{projectRootPath}/Pods'
+    if os.path.isdir(projectPodsDirPath):
+        call(f'rm -rf {projectPodsDirPath}')
 
     # Call `pod install`
+    os.chdir(projectRootPath)
     call('pod install', errorMessage='`pod install` error')
 
     # get podspecs
@@ -122,6 +123,7 @@ def getLicenses(projectRootPath):
 
             writer.writerow([libName, copyright, license, url])
     
+    # open file
     call('open license.csv')
 
 if __name__ == '__main__':
