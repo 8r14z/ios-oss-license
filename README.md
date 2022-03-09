@@ -10,6 +10,7 @@ So at some point, you may encounter a situation that u need to attribute all ope
 Make sure `Python 3` is installed on your machine. if not, [here](https://www.python.org/downloads/)
 
 ### Run the script
+This script will export a CSV file that contains all your licenses. 
 ```
 $ python3 getlicense.py -p path/to/your/ios/project
 ```
@@ -27,6 +28,10 @@ The table can include countless data. Basically, all kind of info in podspec. Fe
 if libName in podspecMap and 'homepage' in podspecMap[libName]:
     url = podspecMap[libName]['homepage']
 ```
+### How to automate this process?
+This is simple! Can create a CI job and make it run once in a while -> write a codegen to port this CSV to Swift/Objective-C code or a format that is more readable for iOS. 
+--> u will have licenses regularly updated in your app. Cheers! 
+
 ### How does this work? 
 ->> read the code tho, the master function is `def getLicenses(projectRootPath):`. I know it's super ugly but some how it works (at least in my case) 
 
