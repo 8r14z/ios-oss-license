@@ -34,7 +34,7 @@ This is simple! Can create a CI job and make it run once in a while -> write a c
 --> u will have licenses regularly updated in your app. Cheers! 
 
 ### How does this work? 
-->> read the code tho, the master function is `def getLicenses(projectRootPath):`. I know it's super ugly but some how it works (at least in my case) 
+--> read the code tho, the master function is `def getLicenses(projectRootPath):`. I know it's super ugly but some how it works (at least in my case) 
 
 ## It doesn't work for you? 
 Haha I'm sure it's not working for everybody. **So what's next?**
