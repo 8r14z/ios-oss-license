@@ -30,6 +30,7 @@ if libName in podspecMap and 'homepage' in podspecMap[libName]:
 ```
 ### How to automate this process?
 This is simple! Can create a CI job and make it run once in a while -> write a codegen to port this CSV to Swift/Objective-C code or a format that is more readable for iOS. 
+
 --> u will have licenses regularly updated in your app. Cheers! 
 
 ### How does this work? 
