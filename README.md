@@ -1,4 +1,4 @@
-# iOS OSS (Open Source Software) Licenses 
+# iOS Open Source Software (OSS) Licenses 
 If you are developing an iOS app, it will be a norm that you are using at least one open source library or two (or hundreds). Well! who is gonna reinvent the wheel? 
 
 So at some point, you may encounter a situation that u need to attribute all open sources being using in the project. For example, Instagram (and several big apps) has a whole section for that purpose `Profile > Settings > About`
